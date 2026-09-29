@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SertON - Conectividade Sertaneja</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>SertON</h1>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">☰</label>
+        <nav>
+            <a href="#home">Início</a>
+            <div class="dropdown">
+                <a href="#projetos">Projetos</a>
+                <div class="dropdown-content">
+                    <a href="#como-doar">Como doar</a>
+                    <a href="#como-ser-voluntario">Como ser voluntário</a>
+                </div>
+            </div>
+            <a href="#cadastro">Cadastro</a>
+        </nav>
+    </header>
+    <img src="../imagens/mascote-serton.png" alt="Mascote da SertON: um jovem sertanejo sorridente, usando chapéu de couro, sentado sobre uma pedra com um notebook no colo, cercado por elementos digitais como sinal de wi-fi e nuvem, com cactos e uma casa do sertão ao fundo">
+
+    <input type="checkbox" id="modal-toggle" class="modal-toggle">
+    <label for="modal-toggle" class="btn-abrir-modal">Saiba mais sobre a SertON</label>
+    <div class="modal-overlay">
+        <div class="modal">
+            <label for="modal-toggle" class="modal-fechar" aria-label="Fechar">&times;</label>
+            <h3>Sobre a SertON</h3>
+            <p>A SertON nasceu da convicção de que o acesso à tecnologia deve chegar a todos os cantos do sertão nordestino, sem exceção.</p>
+        </div>
+    </div>
+
+    <main id="app" class="container"></main>
+
+    <footer>
+        <p>Contato: contato@serton.org | João Pessoa/PB</p>
+        <p>&copy; 2026 SertON - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/imask"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/templates.js"></script>
+    <script src="../js/storage.js"></script>
+    <script src="../js/validacao.js"></script>
+    <script src="../js/mascaras.js"></script>
+    <script src="../js/cadastro.js"></script>
+    <script src="../js/router.js"></script>
+    <script src="../js/events.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
