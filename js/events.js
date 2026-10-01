@@ -19,4 +19,12 @@ function inicializarEventos() {
             document.getElementById('menu-toggle').checked = false;
         }
     });
+    document.addEventListener('keydown', function (evento) {
+    if (evento.key === 'Escape') {
+        const modalToggle = document.getElementById('modal-toggle');
+        if (modalToggle && modalToggle.checked) {
+            modalToggle.checked = false;
+            }
+        }
+    });
 }
