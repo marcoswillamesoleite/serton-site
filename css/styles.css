@@ -350,3 +350,16 @@ input.campo-erro:focus {
     color: var(--cor-fundo);
     margin-bottom: var(--espaco-xs);
 }
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: var(--cor-primaria-escura);
+    color: var(--cor-fundo);
+    padding: var(--espaco-xs) var(--espaco-sm);
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}

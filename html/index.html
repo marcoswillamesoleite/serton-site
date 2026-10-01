@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+    <a href="#app" class="skip-link">Pular para o conteúdo principal</a>
     <header>
         <h1>SertON</h1>
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -27,13 +28,13 @@
 
     <input type="checkbox" id="modal-toggle" class="modal-toggle">
     <label for="modal-toggle" class="btn-abrir-modal">Saiba mais sobre a SertON</label>
-    <div class="modal-overlay">
-        <div class="modal">
-            <label for="modal-toggle" class="modal-fechar" aria-label="Fechar">&times;</label>
-            <h3>Sobre a SertON</h3>
-            <p>A SertON nasceu da convicção de que o acesso à tecnologia deve chegar a todos os cantos do sertão nordestino, sem exceção.</p>
+        <div class="modal-overlay">
+            <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+                <label for="modal-toggle" class="modal-fechar" aria-label="Fechar">&times;</label>
+                <h3 id="modal-titulo">Sobre a SertON</h3>
+                <p>A SertON nasceu da convicção de que o acesso à tecnologia deve chegar a todos os cantos do sertão nordestino, sem exceção.</p>
+            </div>
         </div>
-    </div>
 
     <main id="app" class="container"></main>
 

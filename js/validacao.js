@@ -7,6 +7,8 @@ const formatos = {
 
 function limparErro(campo) {
     campo.classList.remove('campo-erro', 'campo-ok');
+    campo.removeAttribute('aria-describedby');
+    campo.removeAttribute('aria-invalid');
     const proximo = campo.nextElementSibling;
     if (proximo && proximo.classList.contains('msg-erro')) {
         proximo.remove();
@@ -15,10 +17,14 @@ function limparErro(campo) {
 
 function mostrarErro(campo, mensagem) {
     campo.classList.add('campo-erro');
+    const idErro = campo.id + '-erro';
     const aviso = document.createElement('small');
     aviso.className = 'msg-erro';
+    aviso.id = idErro;
     aviso.textContent = mensagem;
     campo.insertAdjacentElement('afterend', aviso);
+    campo.setAttribute('aria-describedby', idErro);
+    campo.setAttribute('aria-invalid', 'true');
 }
 
 function validarCampo(campo) {
