@@ -2,7 +2,7 @@
     /* Cores primárias */
     --cor-primaria: #6B6F73;
     --cor-primaria-escura: #4A4D50;
-    --cor-secundaria: #6B7B4A;
+    --cor-secundaria: #5A6A3D;
 
     /* Cores neutras */
     --cor-texto: #2B2B2B;
@@ -10,6 +10,7 @@
     --cor-fundo: #F5F5F4;
     --cor-fundo-alt: #E4E4E2;
     --cor-borda: #C9C9C6;
+    --cor-botao-texto: #F5F5F4;
     /* Tipografia */
     --fonte-base: 'Segoe UI', Arial, sans-serif;
     --texto-pequeno: 0.875rem;
@@ -208,7 +209,7 @@ fieldset:has(input[type="checkbox"]) label {
 }
 button {
     background-color: var(--cor-secundaria);
-    color: var(--cor-fundo);
+    color: var(--cor-botao-texto);
     border: none;
     border-radius: 4px;
     padding: var(--espaco-sm) var(--espaco-lg);
@@ -220,7 +221,7 @@ button {
 }
 
 button:hover {
-    background-color: #5A6A3D;
+    background-color: #475830;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
@@ -260,16 +261,6 @@ input.campo-erro:focus {
 .msg-erro {
     color: #B3413E;
     font-size: var(--texto-pequeno);
-}
-.badge {
-    display: inline-block;
-    padding: 0.2rem 0.6rem;
-    border-radius: 999px;
-    font-size: var(--texto-pequeno);
-    font-weight: 600;
-    background-color: var(--cor-primaria);
-    color: var(--cor-fundo);
-    margin-bottom: var(--espaco-xs);
 }
 .alert {
     padding: var(--espaco-sm) var(--espaco-md);
@@ -362,4 +353,15 @@ input.campo-erro:focus {
 
 .skip-link:focus {
     top: 0;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --cor-texto: #ECECEA;
+        --cor-texto-claro: #B5B5B2;
+        --cor-fundo: #1E1F1D;
+        --cor-fundo-alt: #2A2B28;
+        --cor-borda: #45463F;
+        --cor-primaria: #AEB2B5;
+        --cor-primaria-escura: #C7CBCD;
+    }
 }
